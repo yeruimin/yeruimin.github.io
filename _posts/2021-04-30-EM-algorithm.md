@@ -63,18 +63,18 @@ $$
 + （3）由于$𝑝(𝑥_𝑖,𝑧_𝑖;\theta)$不能直接得到，故接下来利用Jensen不等式来找到它的逼近。
 
 + (4) 利用Jensen不等式缩放上式，其中$𝑄_𝑖 (𝑧_𝑖 )$为概率分布：
-$$
-\sum_{i} \log \sum_{z_{i}} p\left(x_{i}, z_{i} ; \theta\right)=\sum_{i} \log \sum_{z_{i}} Q_{i}\left(z_{i}\right) \frac{p\left(x_{i}, z_{i} ; \theta\right)}{Q_{i}\left(z_{i}\right)}\geq \sum_{i} \sum_{z_{i}} Q_{i}\left(z_{i}\right) \log \frac{p\left(x_{i}, z_{i} ; \theta\right)}{Q_{i}\left(z_{i}\right)}
-$$
+
+$$\sum_{i} \log \sum_{z_{i}} p\left(x_{i}, z_{i} ; \theta\right)=\sum_{i} \log \sum_{z_{i}} Q_{i}\left(z_{i}\right) \frac{p\left(x_{i}, z_{i} ; \theta\right)}{Q_{i}\left(z_{i}\right)}\geq \sum_{i} \sum_{z_{i}} Q_{i}\left(z_{i}\right) \log \frac{p\left(x_{i}, z_{i} ; \theta\right)}{Q_{i}\left(z_{i}\right)$$
 
 + （5）由不等式成立的条件，$\sum_{i} \log \sum_{z_{i}} Q_{i}\left(z_{i}\right) \frac{p\left(x_{i}, z_{i} ; \theta\right)}{Q_{i}\left(z_{i}\right)}$为$l(\theta)$的下界，故改变$𝑄_𝑖 (𝑧_𝑖 )$的分布，可以使得$\sum_{i} \log \sum_{z_{i}} Q_{i}\left(z_{i}\right) \frac{p\left(x_{i}, z_{i} ; \theta\right)}{Q_{i}\left(z_{i}\right)}$的结果等于$l(\theta)$
 
 + (6)由于Jensen不等式要取等的条件是:
-$$
-\frac{p\left(x_{i}, z_{i} ; \theta\right)}{Q_{i}\left(z_{i}\right)}=C
-$$
+
+$$\frac{p\left(x_{i}, z_{i} ; \theta\right)}{Q_{i}\left(z_{i}\right)}=C$$
+
 其中，c为常数
 + （7）又由于 $Q_{i}\left(z_{i}\right)$ 为概率分布，故满足： $\sum_{i} Q_{i}\left(z_{i}\right)=1$, 则 $\sum_{z} p\left(x_{i}, z_{i} ; \theta\right)=c$，故: 
+
 $$Q_{i}\left(z_{i}\right)=\frac{p\left(x_{i}, z_{i} ; \theta\right)}{\sum_{z} p\left(x_{i}, z_{i} ; \theta\right)}=\frac{p\left(x_{i}, z_{i} ; \theta\right)}{p\left(x_{i} ; \theta\right)}=p\left(z_{i} \mid x_{i} ; \theta\right)$$
 
 + (8)综上所述: 
