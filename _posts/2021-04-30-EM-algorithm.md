@@ -64,7 +64,9 @@ $$
 
 + (4) 利用Jensen不等式缩放上式，其中$𝑄_𝑖 (𝑧_𝑖 )$为概率分布：
 
-$$\sum_{i} \log \sum_{z_{i}} p\left(x_{i}, z_{i} ; \theta\right)=\sum_{i} \log \sum_{z_{i}} Q_{i}\left(z_{i}\right) \frac{p\left(x_{i}, z_{i} ; \theta\right)}{Q_{i}\left(z_{i}\right)}\geq \sum_{i} \sum_{z_{i}} Q_{i}\left(z_{i}\right) \log \frac{p\left(x_{i}, z_{i} ; \theta\right)}{Q_{i}\left(z_{i}\right)$$
+$$\sum_{i} \log \sum_{z_{i}} p\left(x_{i}, z_{i} ; \theta\right)=\sum_{i} \log \sum_{z_{i}} Q_{i}\left(z_{i}\right) \frac{p\left(x_{i}, z_{i} ; \theta\right)}{Q_{i}\left(z_{i}\right)}$$
+
+$$\geq \sum_{i} \sum_{z_{i}} Q_{i}\left(z_{i}\right) \log \frac{p\left(x_{i}, z_{i} ; \theta\right)}{Q_{i}\left(z_{i}\right)$$
 
 + （5）由不等式成立的条件，$\sum_{i} \log \sum_{z_{i}} Q_{i}\left(z_{i}\right) \frac{p\left(x_{i}, z_{i} ; \theta\right)}{Q_{i}\left(z_{i}\right)}$为$l(\theta)$的下界，故改变$𝑄_𝑖 (𝑧_𝑖 )$的分布，可以使得$\sum_{i} \log \sum_{z_{i}} Q_{i}\left(z_{i}\right) \frac{p\left(x_{i}, z_{i} ; \theta\right)}{Q_{i}\left(z_{i}\right)}$的结果等于$l(\theta)$
 
@@ -78,12 +80,15 @@ $$\frac{p\left(x_{i}, z_{i} ; \theta\right)}{Q_{i}\left(z_{i}\right)}=C$$
 $$Q_{i}\left(z_{i}\right)=\frac{p\left(x_{i}, z_{i} ; \theta\right)}{\sum_{z} p\left(x_{i}, z_{i} ; \theta\right)}=\frac{p\left(x_{i}, z_{i} ; \theta\right)}{p\left(x_{i} ; \theta\right)}=p\left(z_{i} \mid x_{i} ; \theta\right)$$
 
 + (8)综上所述: 
+
 $$\quad \hat{\theta}=\operatorname{argmax} \sum_{i} \sum_{z_{i}} Q_{i}\left(z_{i}\right) \log \frac{p\left(x_{i}, z_{i} ; \theta\right)}{Q_{i}\left(z_{i}\right)}$$
+
 其中: $\quad Q_{i}\left(z_{i}\right)=p\left(z_{i} \mid x_{i} ; \theta\right)$
 
 ## 算法流程
 
 + 输入：数据$𝑥=(𝑥_1,𝑥_2,…,𝑥_𝑛)$，联合分布$𝑝(𝑥,𝑧;\theta)$，条件分布$𝑝(𝑧|𝑥,\theta)$，最大迭代次数J。
+
 + 初始化：
 + + 随机初始化模型参数$\theta$为$\theta_0$
 + - $j=1,2,\dots,J$开始迭代：
