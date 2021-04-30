@@ -64,8 +64,7 @@ $$
 
 + (4) 利用Jensen不等式缩放上式，其中$𝑄_𝑖 (𝑧_𝑖 )$为概率分布：
 
-$$\sum_{i} \log \sum_{z_{i}} p\left(x_{i}, z_{i} ; \theta\right)=\\
-& \sum_{i} \log \sum_{z_{i}} Q_{i}\left(z_{i}\right) \frac{p\left(x_{i}, z_{i} ; \theta\right)}{Q_{i}\left(z_{i}\right)}$$
+$$\sum_{i} \log \sum_{z_{i}} p\left(x_{i}, z_{i} ; \theta\right)= \sum_{i} \log \sum_{z_{i}} Q_{i}\left(z_{i}\right) \frac{p\left(x_{i}, z_{i} ; \theta\right)}{Q_{i}\left(z_{i}\right)}$$
 
 $$\geq \sum_{i} \sum_{z_{i}} Q_{i}(z_{i}) \log \frac{p(x_{i}, z_{i} ; \theta)}{Q_{i}(z_{i})}$$
 
@@ -88,15 +87,18 @@ $$\hat{\theta}=argmax \sum_{i} \sum_{z_{i}} Q_{i}\left(z_{i}\right) \log \frac{p
 
 ## 算法流程
 
-+ 输入：数据$𝑥=(𝑥_1,𝑥_2,…,𝑥_𝑛)$，联合分布$𝑝(𝑥,𝑧;\theta)$，条件分布$𝑝(𝑧|𝑥,\theta)$，最大迭代次数J。
+输入：数据$𝑥=(𝑥_1,𝑥_2,…,𝑥_𝑛)$，联合分布$𝑝(𝑥,𝑧;\theta)$，条件分布$𝑝(𝑧|𝑥,\theta)$，最大迭代次数J。
 
-+ 初始化：
-+ + 随机初始化模型参数$\theta$为$\theta_0$
-+ - $j=1,2,\dots,J$开始迭代：
-+ - * E步：计算联合分布的条件概率期望
-+ + + + $$Q_{i}\left(z_{i}\right)=p\left(z_{i} \mid x_{i} ; \theta\right)$$
-+ + + + $$l\left(\theta, \theta_{j}\right)=\sum_{i} \sum_{z_{i}} Q_{i}\left(z_{i}\right) \log \frac{p\left(x_{i}, z_{i} ; \theta\right)}{Q_{i}\left(z_{i}\right)}$$
-+ + + M步：极大化 $l\left(\theta, \theta_{j}\right), \quad$ 得到 $\theta_{j+1}$
-+ + $$\theta_{j+1}=\operatorname{argmax} l\left(\theta, \theta_{j}\right)$$
+初始化：
++ 随机初始化模型参数$\theta$为$\theta_0$
++ $j=1,2,\dots,J$开始迭代：
++ - E步：计算联合分布的条件概率期望
 
-+ 输出：模型参数$\theta$
+$$Q_{i}\left(z_{i}\right)=p\left(z_{i} \mid x_{i} ; \theta\right)$$
+
+$$l\left(\theta, \theta_{j}\right)=\sum_{i} \sum_{z_{i}} Q_{i}\left(z_{i}\right) \log \frac{p\left(x_{i}, z_{i} ; \theta\right)}{Q_{i}\left(z_{i}\right)}$$
+
++ + M步：极大化 $l\left(\theta, \theta_{j}\right), \quad$ 得到 $\theta_{j+1}$
++ $$\theta_{j+1}=\operatorname{argmax} l\left(\theta, \theta_{j}\right)$$
+
+输出：模型参数$\theta$
