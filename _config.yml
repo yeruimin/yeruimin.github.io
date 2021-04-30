@@ -19,7 +19,7 @@ user:
   name: Yessal
   pic: /assets/img/pic21.jpg
   picAlt: "catbook"
-  job: a category-centric theme
+  job: 学习Blog
   aboutme: true # comment this out if you don't need the 'about' page.
 
 exclude:
