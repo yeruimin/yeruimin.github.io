@@ -87,7 +87,7 @@ $$\hat{\theta}=argmax \sum_{i} \sum_{z_{i}} Q_{i}\left(z_{i}\right) \log \frac{p
 
 ## 算法流程
 
-输入：数据$𝑥=(𝑥_1,𝑥_2,…,𝑥_𝑛)$，联合分布$𝑝(𝑥,𝑧;\theta)$，条件分布$𝑝(𝑧|𝑥,\theta)$，最大迭代次数J。
+输入：数据$x=(x_1,x_2,…,x_n)$,联合分布$𝑝(x,z;\theta)$，条件分布$𝑝(z|x,\theta)$，最大迭代次数J。
 
 初始化：
 + 随机初始化模型参数$\theta$为$\theta_0$
@@ -99,6 +99,7 @@ $$Q_{i}\left(z_{i}\right)=p\left(z_{i} \mid x_{i} ; \theta\right)$$
 $$l\left(\theta, \theta_{j}\right)=\sum_{i} \sum_{z_{i}} Q_{i}\left(z_{i}\right) \log \frac{p\left(x_{i}, z_{i} ; \theta\right)}{Q_{i}\left(z_{i}\right)}$$
 
 + + M步：极大化 $l\left(\theta, \theta_{j}\right), \quad$ 得到 $\theta_{j+1}$
-+ $$\theta_{j+1}=\operatorname{argmax} l\left(\theta, \theta_{j}\right)$$
+
+$$\theta_{j+1}=\operatorname{argmax} l\left(\theta, \theta_{j}\right)$$
 
 输出：模型参数$\theta$
