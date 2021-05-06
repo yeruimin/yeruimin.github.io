@@ -1,6 +1,6 @@
 ---
 title: 一个基于深度学习的文本分类尝试
-categories: [Statistics]
+categories: [statistics]
 comments: true
 ---
 
