@@ -4,7 +4,7 @@ categories: [statistics]
 comments: true
 ---
 
-{:toc}
+[TOC]
 
 ## 1、数据来源
 
