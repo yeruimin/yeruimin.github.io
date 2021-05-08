@@ -19,8 +19,8 @@ user:
   name: Yessal
   pic: /assets/img/pic21.jpg
   picAlt: "catbook"
-  job: 家长自己爱学习
-  aboutme: true # comment this out if you don't need the 'about' page.
+  job: 神秘人
+  #aboutme: true # comment this out if you don't need the 'about' page.
 
 exclude:
   - README.md
