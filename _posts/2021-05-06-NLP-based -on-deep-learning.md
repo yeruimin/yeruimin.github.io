@@ -4,8 +4,6 @@ categories: [statistics]
 comments: true
 ---
 
-[TOC]
-
 ## 1、数据来源
 
 + [IFLYTEK' 长文本分类](https://storage.googleapis.com/cluebenchmark/tasks/iflytek_public.zip)
