@@ -7,6 +7,7 @@ comments: true
 一些参考资料：
 + [pytorch-ljj](https://github.com/info-ruc/Web-20)
 + [Anaconda配置虚拟环境](https://zhuanlan.zhihu.com/p/94744929)
++ [Jupyter Notebook 自动代码补全插件](https://blog.csdn.net/weixin_37595559/article/details/81540482)
 
 ## 配置一个环境
 
@@ -62,7 +63,9 @@ tf.__path__
 + 安装Jupyter notebook代码自动补全插件：
 
 在需要自动补全代码的环境（Anaconda Prompt）下，需要关闭jupyter notebook：
+
 + 安装nbextensions：
+
 ```shell
 pip install jupyter_contrib_nbextensions
 jupyter contrib nbextension install --user
@@ -73,6 +76,11 @@ jupyter contrib nbextension install --user
 pip install jupyter_nbextensions_configurator
 jupyter nbextensions_configurator enable --user
 ```
+
++ **遇到问题**：安装成功后在base环境下可以正常使用，在tensorflow2环境下出现异常：
++ **解决方案**：
+
+原因：两个环境下的jupyter notebook 版本不同；从anaconda中改虚拟环境的版本。
 
 ---
 ## 配置Pytorch
