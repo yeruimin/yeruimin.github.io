@@ -80,3 +80,9 @@ nvcc --version
 ```shell
 conda install pytorch torchvision torchaudio cpuonly -c pytorch
 ```
+
++ 加载pytorch
+
+```python
+import torch
+```
