@@ -59,6 +59,21 @@ tf.__path__
 
 每次需要调用 **Pyhton[conda env:tensorflow2]**
 
++ 安装Jupyter notebook代码自动补全插件：
+
+在需要自动补全代码的环境（Anaconda Prompt）下，需要关闭jupyter notebook：
++ 安装nbextensions：
+```shell
+pip install jupyter_contrib_nbextensions
+jupyter contrib nbextension install --user
+```
++ 安装nbextensions_configurator
+
+```shell
+pip install jupyter_nbextensions_configurator
+jupyter nbextensions_configurator enable --user
+```
+
 ---
 ## 配置Pytorch
 
