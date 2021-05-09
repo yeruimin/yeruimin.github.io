@@ -17,10 +17,21 @@ comments: true
 ```shell
 conda info -e
 ```
++ 创建虚拟环境
+
+```shell
+conda create -n [*环境名*] python=3.7
+```
 + 激活虚拟环境
 
 ```shell
 conda activate [*环境名*]
+```
+
++ 退出虚拟环境
+
+```shell
+conda deactivate [*环境名*]
 ```
 ---
 ## 配置Tensorflow
