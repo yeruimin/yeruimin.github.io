@@ -46,6 +46,8 @@ tf.__path__
 
 利用ipykernel包配置Jupyter Notebook的kernel
 
+每次需要调用 **Pyhton[conda env:tensorflow2]**
+
 ---
 ## 配置Pytorch
 
