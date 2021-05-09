@@ -8,7 +8,9 @@ comments: true
 + [pytorch-ljj](https://github.com/info-ruc/Web-20)
 + [Anaconda配置虚拟环境](https://zhuanlan.zhihu.com/p/94744929)
 + [Jupyter Notebook 自动代码补全插件](https://blog.csdn.net/weixin_37595559/article/details/81540482)
-
++ [jupyter Notebook加目录](https://cloud.tencent.com/developer/article/1407815#:~:text=%E5%90%AF%E5%8A%A8%20Jupyter%20Notebook%EF%BC%8C%E5%BC%80%E5%90%AF%E7%9B%AE%E5%BD%95%20%20%E4%B8%8A%E9%9D%A2%E4%B8%A4%E4%B8%AA%E6%AD%A5%E9%AA%A4%E9%83%BD%E6%B2%A1%E6%8A%A5%E9%94%99%E5%90%8E%EF%BC%8C%E5%90%AF%E5%8A%A8%20Jupyter%20Notebook%EF%BC%8C%E4%B8%8A%E9%9D%A2%E9%80%89%E9%A1%B9%E6%A0%8F%E4%BC%9A%E5%87%BA%E7%8E%B0%20Nbextensions,Jupyter%20Lab%20%E7%9A%84%20GitHub%20%E3%80%82.%20%E6%9C%AC%E6%96%87%E5%8F%82%E4%B8%8E%20%E8%85%BE%E8%AE%AF%E4%BA%91%E8%87%AA%E5%AA%92%E4%BD%93%E5%88%86%E4%BA%AB%E8%AE%A1%E5%88%92%20%EF%BC%8C%E6%AC%A2%E8%BF%8E%E6%AD%A3%E5%9C%A8%E9%98%85%E8%AF%BB%E7%9A%84%E4%BD%A0%E4%B9%9F%E5%8A%A0%E5%85%A5%EF%BC%8C%E4%B8%80%E8%B5%B7%E5%88%86%E4%BA%AB%E3%80%82.)
++ [jupyter环境打开](https://blog.csdn.net/weixin_43682519/article/details/109852577)
++ [jupyter kernel问题](https://blog.csdn.net/weixin_43682519/article/details/109852577)
 ## 配置一个环境
 
 进入Anaconda Prompt：
@@ -81,6 +83,9 @@ jupyter nbextensions_configurator enable --user
 + **解决方案**：
 
 原因：两个环境下的jupyter notebook 版本不同；从anaconda中改虚拟环境的版本。
+
++ jupyter notebook加目录
+
 
 ---
 ## 配置Pytorch
