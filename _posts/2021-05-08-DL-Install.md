@@ -14,12 +14,12 @@ comments: true
 
 + 查看当前所有环境
 
-```linux
+```
 conda info -e
 ```
 + 激活虚拟环境
 
-```linux
+```
 conda activate [*环境名*]
 ```
 ---
@@ -55,7 +55,7 @@ tf.__path__
 + 查看CUDA版本
 
 在CMD中输入：
-```linux
+```
 nvcc --version
 ```
 鉴于没有GPU，就不安装CUDA了，直接装CPU版本的吧
@@ -66,6 +66,6 @@ nvcc --version
 
 在官网上选择对应的CPU版本
 
-```linux
+```
 conda install pytorch torchvision torchaudio cpuonly -c pytorch
 ```
