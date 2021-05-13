@@ -12,3 +12,4 @@ comments: true
 + [LDA-math-MCMC 和 Gibbs Sampling](https://cosx.org/2013/01/lda-math-mcmc-and-gibbs-sampling)***
 + [文本主题模型之LDA(二) LDA求解之Gibbs采样算法](https://www.cnblogs.com/pinard/p/6867828.html)***
 + [从随机过程到马尔科夫链蒙特卡洛方法](https://www.cnblogs.com/daniel-D/p/3388724.html)***
++ [Collapsed Gibbs Sampling For LDA](https://blog.csdn.net/weixin_45758540/article/details/109891697)***
