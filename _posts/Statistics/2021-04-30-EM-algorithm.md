@@ -1,6 +1,6 @@
 ---
 title: EM 算法
-categories: [statistics]
+categories: [Statistics]
 comments: true
 ---
 

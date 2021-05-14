@@ -1,6 +1,6 @@
 ---
 title: 深度学习框架安装
-categories: [homework]
+categories: [ComputerScience]
 comments: true
 ---
 

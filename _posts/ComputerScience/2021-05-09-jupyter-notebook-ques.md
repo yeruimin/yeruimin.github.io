@@ -1,6 +1,6 @@
 ---
 title: Jupyter Notebook解决虚拟环境自动代码补全失灵问题
-categories: [homework]
+categories: [ComputerScience]
 comments: true
 ---
 

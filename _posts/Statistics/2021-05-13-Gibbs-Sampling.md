@@ -1,6 +1,6 @@
 ---
 title: Gibbs Sampling
-categories: [statistics]
+categories: [Statistics]
 comments: true
 ---
 
