@@ -8,6 +8,7 @@ comments: true
 + [文本分类综述](https://zhuanlan.zhihu.com/p/76003775)
 + [评价指标-ARI、NMI](https://blog.csdn.net/zhanglianhai555/article/details/104801318)
 + [深度学习顶会盘点](https://www.aminer.cn/conf)
++ [NLP.TM | GloVe模型及其Python实现](https://www.jianshu.com/p/d0cb367752e8)
 
 ## 1、数据来源
 

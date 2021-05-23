@@ -13,3 +13,4 @@ comments: true
 + [文本主题模型之LDA(二) LDA求解之Gibbs采样算法](https://www.cnblogs.com/pinard/p/6867828.html)***
 + [从随机过程到马尔科夫链蒙特卡洛方法](https://www.cnblogs.com/daniel-D/p/3388724.html)***
 + [Collapsed Gibbs Sampling For LDA](https://blog.csdn.net/weixin_45758540/article/details/109891697)***
++ [告别数学公式，图文解读什么是马尔可夫链蒙特卡罗方法（MCMC）](https://zhuanlan.zhihu.com/p/32982140)
